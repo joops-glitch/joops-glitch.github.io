@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Phrase Display with Background</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Random Phrase Display</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="textbox" id="textbox">
+            <span id="phrase"></span>
+        </div>
+        <button class="refresh-button" onclick="displayRandomPhrase()">Refresh</button>
+    </div>
+
+    <script>
+        const phrases = [
+            { text: "OHHHHH HEALLLERRRRRRRR.....??" image: "images/Hroth_Mommy_maa.png" },
+            { text: "Mic check, mic check... microphoneeeee... yello?", image: "images/Snaf.png" },
+            { text: "Sorry, toots, I'm gay.", image: "images/Snaf.png" },
+            { text: "Is this the Krabby Patty?", image: "images/Snaf.png" },
+            { text: "Hang on I need a sip of my gamer fuel.", image: "images/Kenda_Textbox_v1.png" }
+        ];
+
+        function displayRandomPhrase() {
+            const randomIndex = Math.floor(Math.random() * phrases.length);
+            const selectedPhrase = phrases[randomIndex];
+            document.getElementById('phrase').innerText = selectedPhrase.text;
+            document.getElementById('textbox').style.backgroundImage = `url(${selectedPhrase.image})`;
+        }
+
+        // Display a random phrase on initial load
+        window.onload = displayRandomPhrase;
+    </script>
+</body>
+</html>
