@@ -51,7 +51,7 @@ nav ul li a {
     color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
-    top: -148px; /* Moves the text box up to align with the specific coordinates */
+    top: 0px; /* Moves the text box up to align with the specific coordinates */
     left: 169px; /* Moves the text box left to align with the specific coordinates */
 }
 
