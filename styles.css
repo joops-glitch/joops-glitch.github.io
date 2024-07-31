@@ -50,11 +50,11 @@ nav ul li a {
 
 .textbox span {
     position: absolute;
-    left: 710px; /* Adjust this value to move text left */
-    top: 50%;
+    left: 305px; /* Adjust this value to move text left */
+    top: 67%;
     transform: translateY(-50%);
     font-size: 24px;
-    color: #fff;
+    color: #000;
     white-space: nowrap;
 }
 
