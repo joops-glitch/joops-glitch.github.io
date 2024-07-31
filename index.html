@@ -21,7 +21,7 @@
         <div class="textbox" id="textbox">
             <span id="phrase"></span>
         </div>
-        <button class="refresh-button" onclick="displayRandomPhrase()">Refresh</button>
+        <button class="refresh-button" id="refreshButton">Refresh</button>
     </div>
 
     <script>
@@ -39,6 +39,8 @@
             document.getElementById('phrase').innerText = selectedPhrase.text;
             document.getElementById('textbox').style.backgroundImage = `url(${selectedPhrase.image})`;
         }
+
+        document.getElementById('refreshButton').addEventListener('click', displayRandomPhrase);
 
         // Display a random phrase on initial load
         window.onload = displayRandomPhrase;
