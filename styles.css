@@ -53,7 +53,7 @@ nav ul li a {
     position: relative;
     top: 0px; /* Moves the text box up to align with the specific coordinates */
     left: 169px; /* Moves the text box left to align with the specific coordinates */
-}
+} /**/
 
 .refresh-button {
     margin-left: 20px;
